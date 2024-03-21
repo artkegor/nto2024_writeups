@@ -13,7 +13,7 @@
 
 ![builtins](https://github.com/artkegor/nto2024_writeups/blob/main/task-based/web3/web3-3.png)
 
-8. Дальше дело за малым, копируем подходящий эксплоит с той же [статьи](https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes)
-9. Профит
+8. Дальше дело за малым, копируем подходящий эксплоит с той же [статьи](https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes).
+9. Профит.
 
 ![flag](https://github.com/artkegor/nto2024_writeups/blob/main/task-based/web3/web3-4.png)
