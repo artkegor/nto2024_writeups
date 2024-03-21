@@ -10,7 +10,7 @@
 
 ![ip](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics1.png)
 
-4. Источник вируса - фишинговое письмо, поэтому будем искать возможные дампы emailов.
+4. Источник вируса - фишинговое письмо, поэтому будем искать возможные дампы email'ов.
 5. Находим в `C:\Users\Evgeniy\AppData\Local\Microsoft\Outlook` ost-дамп почты.
 6. В браузере открываем первый попавшийся восстановитель ost-файлов и получим pst-файл.
 7. Найдя любой pst-viewer получаем письма.
@@ -20,7 +20,7 @@
 
 ![cve](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics2.png)
 
-10. Через поиск в системе находим ранее скачанный Rjomba.exe. Запускаем ghidra и приступаем к анализу.
+10. Через поиск в системе находим ранее скачанный Rjomba.exe. Запускаем Ghidra и приступаем к анализу.
 11. В интернете находим [статью](https://anti-debug.checkpoint.com/techniques/misc.html) с типичными способами обойти Windows Debug. Через поиск в Ghidra просматриваем все указанные в статье функции.
 12. Обнаруживаем те самые функции в нашем вирусе.
 > Ответ на вопрос №4 - IsDebuggerPresent, CheckRemoteDebuggerPresent (winapi)
