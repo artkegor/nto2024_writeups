@@ -11,3 +11,5 @@
 > Ответ на вопрос №6 - скрипт linpeas.sh
 7. Также в истории можем увидеть jynx2, загуглив информацию про него мы понимаем, что это Root-Kit.
 > Ответ на вопрос №7 - jynx2.so
+
+![jynx2](https://github.com/artkegor/nto2024_writeups/blob/main/forensics2/forensics2-1.png)
