@@ -77,3 +77,4 @@ p.sendline(payload)
 p.interactive()
 ```
 7. Профит
+![flag](https://github.com/artkegor/nto2024_writeups/blob/main/task-based/pwn2/proofpwn2.png)
