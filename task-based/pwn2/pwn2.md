@@ -76,3 +76,4 @@ payload += bytes(frame)
 p.sendline(payload)
 p.interactive()
 ```
+7. Профит
