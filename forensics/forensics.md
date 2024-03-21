@@ -16,3 +16,9 @@
 
 ![cve](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics2.png)
 
+10. Через поиск находим ранее скачанный Rjomba.exe. Запускаем ghidra и приступаем к анализу.
+11. В интернете находим [статью](https://anti-debug.checkpoint.com/techniques/misc.html) с типичными способами обойти Windows Debug. Через поиск в Ghidra просматриваем все указанные в статье функции.
+12. Обнаруживаем те самые функции в нашем вирусе.
+> Ответ на вопрос №4 - IsDebuggerPresent, CheckRemoteDebuggerPresent (winapi)
+
+![badfuncs](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics3.png)
