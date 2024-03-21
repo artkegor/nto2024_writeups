@@ -15,8 +15,9 @@
 
 ![hugekeys](https://github.com/artkegor/nto2024_writeups/blob/main/forensics2/forensics2-6.png)
 
-6. Посмотрим историю root'a в `.bash_history` и увидим там, что хакер удалял /tmp/linpeas.sh, это известный скрипт для поиска уязвимостей на Linux-серверах.
+6. Посмотрим историю root'a в `.bash_history` и увидим там, что хакер удалял /tmp/linpeas.txt, это известный скрипт для поиска уязвимостей на Linux-серверах.
 > Ответ на вопрос №6 - скрипт linpeas.sh
+`rm -rf /tmp/linpeas.txt`
 7. Также в истории можем увидеть jynx2, загуглив информацию про него мы понимаем, что это Root-Kit.
 > Ответ на вопрос №7 - jynx2.so
 
