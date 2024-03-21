@@ -37,3 +37,5 @@
 > Ответ на вопрос №7 - в Telegram-бот
 
 ![telegramisimposter](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics5.png)
+
+
