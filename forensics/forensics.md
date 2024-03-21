@@ -47,6 +47,7 @@
 20. Проходимся по дампам и обнаруживаем ключ от IV и AES.
 21. В интернете ищем любой AES-decoder, где и получаем финальный ответ.
 > Ответ на вопрос №6 - amogusamogusamogusamogusamogusam
+
 > Ответ на вопрос №8 - sFYZ#2z9VdUR9sm`3JRz
 
 ![gg](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics8.png)
