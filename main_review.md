@@ -279,4 +279,4 @@ maybe in etc/secret ???
 Меняем это:  
 ```sql_query = "UPDATE user SET pw = '" + str(new_password) + "' WHERE login = '" + str(username) + "';"```  
 На это:  
-```update_cursor.execute( ‘UPDATE user SET pw = ? WHERE login = ? ‘, (str(new_password), str(username),))```  
+```update_cursor.execute( 'UPDATE user SET pw = ? WHERE login = ? ', (str(new_password), str(username),))```  
