@@ -6,6 +6,8 @@
 
 ![badlab](https://github.com/artkegor/nto2024_writeups/blob/main/forensics2/forensics2-3.png)
 
+![badlab15.2.2](https://github.com/artkegor/nto2024_writeups/blob/main/forensics2/forensics2-4.png)
+
 4. Так как хакер получил прямой доступ к управлению Linux-машиной и выполнению команд, то использовался RCE.
 > Ответ на вопрос №2 - RCE
 5. Посмотрим файл /root/.ssh/authorized_keys на предмет пользователей которые могут подключиться к серверу по SSH с помощью ключей и увидим там постороннего пользователя. 
