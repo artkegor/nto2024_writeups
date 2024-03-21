@@ -22,3 +22,9 @@
 > Ответ на вопрос №4 - IsDebuggerPresent, CheckRemoteDebuggerPresent (winapi)
 
 ![badfuncs](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics3.png)
+
+13. Следующий вопрос по теме криптографии, поэтому скачиваем для Ghidra модуль FindCrypto.
+14. Находим несколько криптографических функций, одна из них - AES Encryption, а в ней же переменная на 32 символа: `undefined (**ppauVar2) [32];`. Мы имеем дело с AES-256 CBC.
+> Ответ на вопрос №5 - AES-256 CBC
+
+![cryptofuncs](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics4.png)
