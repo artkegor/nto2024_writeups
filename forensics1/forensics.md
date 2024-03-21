@@ -31,7 +31,7 @@
 14. Находим несколько криптографических функций, одна из них - AES Encryption, а в ней же переменная на 32 символа: `undefined (**ppauVar2) [32];`. Мы имеем дело с AES-256 CBC.
 > Ответ на вопрос №5 - AES-256 CBC
 
-![cryptofuncs](https://github.com/artkegor/nto2024_writeups/blob/main/forensics1forensics4.png)
+![cryptofuncs](https://github.com/artkegor/nto2024_writeups/blob/main/forensics1/forensics4.png)
 
 15. Заканчиваем работу с Ghidra и скидываем наш файл на VirusTotal. Начинаем изучать отчет.
 16. В разделе Behavior находим связи с `api.telegram.org`. Вирус взаимодействует с Telegram-ботом.
