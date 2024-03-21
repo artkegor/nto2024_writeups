@@ -52,3 +52,4 @@
 
 ![gg](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics8.png)
 
+22. Профит
