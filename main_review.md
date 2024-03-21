@@ -275,8 +275,8 @@ maybe in etc/secret ???
 ---
 
 # Решение задачи на Defence
-1. В файле auth_api.py видим SQL-инъекцию на 211 строке.\
-Меняем это:\
-```sql_query = "UPDATE user SET pw = '" + str(new_password) + "' WHERE login = '" + str(username) + "';"```\ 
-На это:\
-```update_cursor.execute( ‘UPDATE user SET pw = ? WHERE login = ? ‘, (str(new_password), str(username),))```\
+1. В файле auth_api.py видим SQL-инъекцию на 211 строке.  
+Меняем это:  
+```sql_query = "UPDATE user SET pw = '" + str(new_password) + "' WHERE login = '" + str(username) + "';"```  
+На это:  
+```update_cursor.execute( ‘UPDATE user SET pw = ? WHERE login = ? ‘, (str(new_password), str(username),))```  
