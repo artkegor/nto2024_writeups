@@ -38,4 +38,16 @@
 
 ![telegramisimposter](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics5.png)
 
+17. Переходим к самой интересной части. А именно нахождению ключей и расшифровке файла на рабочем столе.
+18. Для этого запускаем x64dbg на рабочем столе Windows.
+19. Итерируем несколько десятков шагов и создаем дампы памяти.
+
+![hardestpart](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics7.png)
+
+20. Проходимся по дампам и обнаруживаем ключ от IV и AES.
+21. В интернете ищем любой AES-decoder, где и получаем финальный ответ.
+> Ответ на вопрос №6 - amogusamogusamogusamogusamogusam
+> Ответ на вопрос №8 - sFYZ#2z9VdUR9sm`3JRz
+
+![gg](https://github.com/artkegor/nto2024_writeups/blob/main/forensics/forensics8.png)
 
