@@ -8,6 +8,7 @@
 
 ![ssti](https://github.com/artkegor/nto2024_writeups/blob/main/task-based/web3/web3-2.png)
 6. Кроме того, в самом коде настроена еще одна проверка ссылок, которая не позволяет нам запустить стандартные эксплоиты. В частности не разрешается `__class__`.
+
 7. В этой [статье](https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes) находим подходящий под фильтр пейлоад с `__builtins__`.
 
 ![builtins](https://github.com/artkegor/nto2024_writeups/blob/main/task-based/web3/web3-3.png)
