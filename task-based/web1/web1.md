@@ -9,4 +9,5 @@ maybe in etc/secret ???
 4. Очевидно, что здесь можно использовать Path-Traversal.
 5. Передаем в качестве аргумента следующее содержимое: `?file_type=../../etc/secret`
 6. Профит
+
 ![flag](https://github.com/artkegor/nto2024_writeups/blob/main/task-based/web1/web1-2.png)
