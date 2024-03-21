@@ -280,3 +280,5 @@ maybe in etc/secret ???
 ```sql_query = "UPDATE user SET pw = '" + str(new_password) + "' WHERE login = '" + str(username) + "';"```  
 На это:  
 ```update_cursor.execute( 'UPDATE user SET pw = ? WHERE login = ? ', (str(new_password), str(username),))```  
+2. В package.json на 14 строке видим уязвимую версию axios. Необходимо ее обновить. [Ссылка на CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28849)  
+
